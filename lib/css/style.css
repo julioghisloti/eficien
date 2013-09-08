@@ -1,0 +1,98 @@
+/* Eficien Style */
+
+/* Font */
+@font-face {
+  font-family: 'Homizio';
+  src: url('../font/thin.eot');
+  src: url('../font/thin.eot?#iefix') format('embedded-opentype'),
+       url('../font/thin.woff') format('woff'),
+       url('../font/thin.ttf') format('truetype'),
+       url('../font/thin.svg#Homizio-Thin') format('svg');
+}
+
+/* Comp */
+body{
+	font-family: 'Homizio';
+	margin: 0;
+}
+
+.center{
+	margin-left: auto; 
+	margin-right: auto;
+}
+
+.transform{
+	-webkit-transition: all .3s ease-in-out;
+	-moz-transition: all .3s ease-in-out;
+	-o-transition: all .3s ease-in-out;
+	-ms-transition: all .3s ease-in-out;
+	transition: all .3s ease-in-out;
+}
+
+.content{
+	position: relative;
+	width: 1000px;
+}
+
+/* A == */
+a, a:link, a:active, a:visited{
+	color: #000;
+	text-decoration: none;
+}
+
+a:hover{
+	color: #f26001;
+}
+
+/* top */
+#menu-all{
+	background-color: #fff;
+	height: 90px;
+	opacity: .9; filter:alpha(opacity=80);
+	padding-top: 23px;
+	position: fixed;
+	width: 100%;
+	z-index: 9999;
+}
+
+#menu-in{
+	height: 63px;
+	position: relative;
+	width: 1000px;
+}
+
+#logo{position: absolute;}
+
+#menu{
+	font-weight: bold;
+	margin-top: 25px;
+	position: absolute;
+	right: 0;
+}
+
+#menu ul{
+	list-style: none;
+	margin: 0;
+	padding: 0;
+}
+
+#menu li{
+	display: inline-block;
+	margin-left: 10px;
+}
+
+#menu li:first-child{margin: 0 !important;}
+
+/* home */
+#bg-home{
+	background-repeat: no-repeat;
+	overflow: hidden;
+	position: absolute;
+	width: 100%;
+	z-index: -1;
+}
+
+.page #home{
+	margin-top: 130px;
+	position: relative;
+}
