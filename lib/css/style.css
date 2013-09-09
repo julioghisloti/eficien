@@ -10,7 +10,7 @@
        url('../font/thin.svg#Homizio-Thin') format('svg');
 }
 
-/* Comp */
+/* Comp ========================================================================================= */
 body{
 	font-family: 'Homizio';
 	margin: 0;
@@ -29,12 +29,90 @@ body{
 	transition: all .3s ease-in-out;
 }
 
+.bg-text{
+	background: url("../img/bg-text.png") repeat-x;
+	bottom: 0;
+	display: block;
+	height: 348px;
+	position: absolute;
+	width: 100%;
+}
+
+.page{
+	position: relative;
+	width: 100%;
+}
+
 .content{
 	position: relative;
 	width: 1000px;
 }
 
-/* A == */
+.bg-page{
+	position: absolute !important;
+	height: 600px !important;
+}
+
+.top-page{
+	height: 600px;
+	position: relative;
+	width: 100%;
+}
+
+.top-page-text{
+	bottom: 20px;
+	color: #fff;
+	font-weight: normal;
+	left: 50%;
+	margin-left: -500px;
+	position: absolute;
+	width: 1000px;
+}
+
+.top-page-text h2{
+	font-size: 60px;
+	font-weight: normal;
+	margin: 0;
+}
+
+.top-page-text h4{
+	margin-top: 5px;
+}
+
+.page-title{
+	display: inline-block;
+	position: relative;
+}
+
+.page-title h3{
+	color: #FF6600;
+	font-size: 53px;
+	font-weight: normal;
+}
+
+.page-text{
+	font-family: sans-serif;
+	border-left: 1px solid #ccc;
+	padding-left: 15px;
+	position: absolute;
+	right: 0;
+	top: 30px;
+	width: 500px;
+}
+
+.page-text p{
+	margin-bottom: 5px;
+	text-align: justify;
+}
+
+.page-content{
+	margin-bottom: 30px;
+	position: relative;
+	top: 30px;
+	width: 737px;
+}
+
+/* A ============================================================================================ */
 a, a:link, a:active, a:visited{
 	color: #000;
 	text-decoration: none;
@@ -44,7 +122,7 @@ a:hover{
 	color: #f26001;
 }
 
-/* top */
+/* top ========================================================================================== */
 #menu-all{
 	background-color: #fff;
 	height: 90px;
@@ -83,7 +161,7 @@ a:hover{
 
 #menu li:first-child{margin: 0 !important;}
 
-/* home */
+/* home ========================================================================================= */
 #bg-home{
 	background-repeat: no-repeat;
 	overflow: hidden;
@@ -92,7 +170,31 @@ a:hover{
 	z-index: -1;
 }
 
-.page #home{
-	margin-top: 130px;
-	position: relative;
+#home{
+	height: 100%;
+	display: block;
 }
+
+#home-text{
+	bottom: 25px;
+	color: #fff;
+	display: block;
+	font-weight: normal;
+	position: absolute;
+}
+
+#home-text h2{
+	font-size: 60px;
+	font-weight: normal;
+	margin: 0;
+}
+
+#home-text h4{
+	margin-top: 5px;
+}
+
+/* empresa ====================================================================================== */
+.empresa-content{height: 350px;}
+
+/* solucoes ===================================================================================== */
+.solucoes-content{height: 420px;}
