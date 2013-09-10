@@ -20,11 +20,34 @@
 				<!-- Menu -->
 				<nav id="menu">
 					<ul>
-						<li><a href="#" class="transform">home</a></li>
-						<li><a href="#" class="transform">empresa</a></li>
-						<li><a href="#" class="transform">produtos</a></li>
-						<li><a href="#" class="transform">soluções</a></li>
-						<li><a href="#" class="transform">contato</a></li>
+						<li>
+							<a href="#" 
+							   onclick="$('html,body').animate({scrollTop: 
+						                $('#home').offset().top}, 1500);" 
+						       class="transform">home
+						   	</a>
+						</li>
+						<li>
+							<a href="#" 
+							   onclick="$('html,body').animate({scrollTop: 
+						                $('#empresa').offset().top}, 1500);" 
+						       class="transform">empresa
+						   	</a>
+						</li>
+						<li>
+							<a href="#" 
+							   onclick="$('html,body').animate({scrollTop: 
+						                $('#solucoes').offset().top}, 1500);" 
+						       class="transform">soluções 
+						   	</a>
+						</li>
+						<li>
+							<a href="#" 
+							   onclick="$('html,body').animate({scrollTop: 
+						                $('#contato').offset().top}, 1500);" 
+						       class="transform">contato 
+						   	</a>
+						</li>
 					</ul>
 				</nav>
 
@@ -53,7 +76,7 @@
 	<!-- end -home- -->
 
 	<!-- start -empresa- -->
-		<section class="page">
+		<section id="empresa" class="page">
 			<!-- BG Home -->
 			<div class="bg-page"><img src="lib/img/bg-pages/bg-empresa.jpg" alt="" /></div>
 
@@ -76,7 +99,6 @@
 						<div class="page-title"><h3>A Empresa</h3></div>
 
 						<div class="page-text">
-							<br><br><br><br>
 							<p>
 								A Eficiensoft é uma empresa capacitada a oferecer a uma gama completa de Produto e Soluções em Hardware e Software. 
 								Além de consultorias especializadas para as mais diversas plataformas e ambientes multimarcas, A Eficiensoft, foi criada focando 
@@ -93,8 +115,8 @@
 		</section>
 	<!-- end -empresa- -->
 
-	<!-- start -empresa- -->
-		<section class="page">
+	<!-- start -solucoes- -->
+		<section id="solucoes" class="page">
 			<!-- BG Home -->
 			<div class="bg-page"><img src="lib/img/bg-pages/bg-solucoes.jpg" alt="" /></div>
 
@@ -117,7 +139,6 @@
 						<div class="page-title"><h3>Soluções</h3></div>
 
 						<div class="page-text">
-							<br><br><br><br>
 							<p>
 								<strong>Desenvolvimento de Sistema</strong> <br />
 								Atuamos na área de desenvolvimento de sistemas com profissionalismo e qualidade, trabalhando 
@@ -139,7 +160,103 @@
 			<!-- end -content PAGE- -->
 
 		</section>
-	<!-- end -empresa- -->
+	<!-- end -solucoes- -->
+
+	<!-- start -solucoes- -->
+		<section id="contato" class="page">
+			<!-- BG Home -->
+			<div class="bg-page"><img src="lib/img/bg-pages/bg-contato.jpg" alt="" /></div>
+
+			<!-- start -text page- -->
+				<div class="top-page">
+					<!-- BG Text -->
+					<div class="bg-text"></div>
+				
+					<div class="top-page-text">
+						<h2>Entre em Contato</h2>
+						<h4>Vai ser um prazer dar uma mãozinha</h4>
+					</div>
+				
+				</div>
+			<!-- end -text page- -->
+
+			<!-- start -content PAGE- -->
+				<div class="content center">
+					<div class="page-content contato-content center">
+						<div class="page-title"><h3>Contato</h3></div>
+
+						<div class="page-text form-contato">
+							<form action="lib/actions/contato.php" method="post">
+								
+								<label for="nome">Nome</label>
+								<input class="input" type="text" name="nome" />
+
+								<label for="Email">Email</label>
+								<input class="input" type="text" name="email" />
+
+								<label for="tel">Telefone</label>
+								<input class="input" type="text" name="tel" />
+
+								<label for="cidade">Cidade</label>
+								<input class="input" type="text" name="cidae" />
+
+								<label for="estado">Estado</label>
+								<select class="input select" name="estado" >
+									<option value="AC">AC</option>
+									<option value="AL">AL</option>
+									<option value="AM">AM</option>
+									<option value="AP">AP</option>
+									<option value="BA">BA</option>
+									<option value="CE">CE</option>
+									<option value="DF">DF</option>
+									<option value="ES">ES</option>
+									<option value="GO">GO</option>
+									<option value="MA">MA</option>
+									<option value="MG">MG</option>
+									<option value="MS">MS</option>
+									<option value="MT">MT</option>
+									<option value="PA">PA</option>
+									<option value="PB">PB</option>
+								    <option value="PE">PE</option>
+									<option value="PI">PI</option>
+									<option value="PR">PR</option>
+									<option value="RJ">RJ</option>
+									<option value="RN">RN</option>
+									<option value="RO">RO</option>
+									<option value="RR">RR</option>
+									<option value="RS">RS</option>
+									<option value="SC">SC</option>
+									<option value="SE">SE</option>
+									<option value="SP">SP</option>
+									<option value="TO">TO</option>
+								</select> 
+
+								<label for="cidade">Endereço</label>
+								<input class="input" type="text" name="endereco" />
+
+								<label for="option">Assunto</label>
+								<select name="option" class="input select" >
+								    <option value="sites"> Sites </option>
+									<option value="consultoria">Consultoria  </option>
+									<option value="treinamento"> Treinamento </option>
+									<option value="outro"> Outros </option>
+								</select>
+								
+								<label for="menssagem">Assunto</label>
+								<textarea name="menssagem" class="input text-area" rows="8"></textarea>
+								<br>
+									
+								<input class="input-submit transform" type="submit" value="Enviar" />
+
+
+							</form>
+						</div>
+					</div>
+				</div>
+			<!-- end -content PAGE- -->
+
+		</section>
+	<!-- end -solucoes- -->
 
 	<!-- Scripts -->
 	<script src="lib/js/jquery.js"></script>

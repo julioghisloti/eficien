@@ -94,6 +94,7 @@ body{
 	font-family: sans-serif;
 	border-left: 1px solid #ccc;
 	padding-left: 15px;
+	padding-top: 90px;
 	position: absolute;
 	right: 0;
 	top: 30px;
@@ -194,7 +195,44 @@ a:hover{
 }
 
 /* empresa ====================================================================================== */
-.empresa-content{height: 350px;}
+.empresa-content{height: 400px;}
 
 /* solucoes ===================================================================================== */
-.solucoes-content{height: 420px;}
+.solucoes-content{height: 460px;}
+
+/* contato ====================================================================================== */
+.contato-content{height: 869px;}
+
+.form-contato label{
+	display: inline-block;
+	font-family: sans-serif;
+	margin-bottom: 5px;
+	width: 100%;
+}
+
+.input{
+	background-color: #f0f0f0;
+	border: 0;
+	height: 30px;
+	margin-bottom: 20px;
+	outline: none;
+	padding: 5px;
+	width: 400px;
+}
+
+.select{ width: 200px; }
+.text-area{ height: 60px; }
+
+.input-submit{
+	background-color: #fff;
+	border: 1px solid #ccc;
+	height: 40px;
+	width: 150px;
+}
+
+.input-submit:hover{
+	background-color: #f26001;
+	border: 1px solid #f26001;
+	color: #fff;
+	cursor: pointer;
+}
